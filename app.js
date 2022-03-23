@@ -1,8 +1,15 @@
 // import functions and grab DOM elements
+import { getAllCharacters } from './fetch-utils.js';
+import { renderCharCard } from './render-utils.js';
 
-// let state
+const charContainer = document.getElementById('character-list-container');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+window.addEventListener('load', async () => {
+    const chars = await getAllCharacters();
+
+    for (let char of chars) {
+        const charEl = renderCharCard(char);
+        charContainer.append(charEl);
+    }
+
+});

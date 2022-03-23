@@ -89,3 +89,32 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.Affiliations-And-Appearances {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .Affiliations-And-Appearances li {
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.char-card img {
+    
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    
+}
+
+#character-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.char-card {
+    margin: 10px;
+}
