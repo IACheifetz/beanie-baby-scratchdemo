@@ -1,0 +1,1 @@
+import { getCharacter } from '../fetch-utils.js';
