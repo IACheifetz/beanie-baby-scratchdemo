@@ -1,5 +1,5 @@
 import { getCharacter } from '../fetch-utils.js';
-import { renderCharDetail } from './render-utils.js';
+import { renderCharDetail } from '../render-utils.js';
 
 const charDetailEl = document.querySelector('.character-detail-container');
 

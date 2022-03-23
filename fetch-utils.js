@@ -11,7 +11,7 @@ export async function getAllCharacters() {
 }
 
 export async function getCharacter(id) {
-    console.log(id);
+    // console.log(id);
     const response = await client
         .from('MetalGearSolid')
         .select()
